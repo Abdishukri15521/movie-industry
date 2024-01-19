@@ -1,0 +1,111 @@
+Flatdango Movie Ticket Booking App
+Welcome to Flatdango, your go-to platform for a seamless movie ticket booking experience at Flatiron Movie Theater! With Flatdango, users can effortlessly browse, select, and purchase movie tickets for their favorite films. This project is designed to help you enhance your skills in implementing a web application using JavaScript, focusing on DOM manipulation, event handling, and server communication.
+
+Table of Contents
+Learning Goals
+Introduction
+Requirements
+Pre-requisite Data
+Project Setup
+Project Guidelines
+Core Deliverables
+Bonus Deliverables
+Extra Bonus
+Usage
+Setup
+Running the Application
+Rubric
+DOM Manipulation
+Events
+Communication with the Server
+Contributing
+License
+Learning Goals
+Implement a 'mini' web application using JavaScript.
+Practice DOM manipulation to update and render content dynamically.
+Handle events to create an interactive user experience.
+Communicate with a local server using JSON DB server for data retrieval.
+Introduction
+For this assessment, you'll be building out the Flatdango application. Your goal is to create an interactive platform where users can view movie details, check available tickets, and purchase tickets for their preferred movies.
+
+Requirements
+Well-Written README File: You're currently reading it! Make sure to follow the guidelines provided to successfully complete the project.
+
+Fetch Data from a Local Server: Utilize a local JSON DB server to fetch movie data for your application.
+
+Pre-requisite Data
+Use the provided db.json file as your server's database.
+
+Project Setup
+Create a new project folder.
+Create a new private GitHub repository for your project.
+Add your Teaching Manager as a contributor for grading purposes.
+Regularly commit your work to the repository.
+Project Guidelines
+Core Deliverables:
+As a user, you can:
+
+See the details of the first movie, including its poster, title, runtime, showtime, and available tickets when the page loads.
+
+Endpoint: GET /films/1
+See a menu of all movies on the left side of the page in the ul#films element when the page loads.
+
+Endpoint: GET /films
+Buy a ticket for a movie. After clicking the "Buy Ticket" button, the number of available tickets should decrease on the frontend. No persistence is needed for this feature.
+
+Bonus Deliverables:
+Click on a movie in the menu to replace the currently displayed movie's details with the new movie's details. Additional GET request may be required.
+
+When a movie is sold out, indicate it by changing the button text to "Sold Out" and adding a sold-out class to the film item in the ul#films menu.
+
+Extra Bonus:
+Persist the updated number of tickets_sold on the server when a ticket is purchased using a PATCH request.
+
+Endpoint: PATCH /films/:id
+Delete a film from the server. Add a delete button next to each film in the ul#films menu.
+
+Endpoint: DELETE /films/:id
+Usage
+Setup
+Clone the Repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/flatdango.git
+cd flatdango
+Install Dependencies:
+
+bash
+Copy code
+# Add any specific instructions for installing dependencies
+Run the Application:
+
+bash
+Copy code
+# Add any specific instructions for running the application
+Rubric
+DOM Manipulation
+5 pts: Completed all Core Deliverables and at least one Advanced Deliverable.
+4 pts: Structured HTML creation code cleanly and in a reusable way.
+3 pts: Successfully rendered and updated the DOM as described by the Core Deliverables.
+2 pts: Rendered elements to the DOM with some errors.
+1 pt: Did not properly render elements to the DOM.
+Events
+5 pts: Completed all Core Deliverables and at least one Advanced Deliverable.
+4 pts: Structured code cleanly and in a reusable way, with effective use of functions and target properties.
+3 pts: Successfully attached event listeners to handle DOM events and met all Core Deliverables.
+2 pts: Attached event listeners incompletely or with some errors.
+1 pt: Did not attach event listeners to respond to events.
+Communication with the Server
+5 pts: Completed all Core Deliverables and at least one Advanced Deliverable.
+4 pts: Code structured in a clean and reusable way, with clear function and variable naming.
+3 pts: Able to perform a GET and a non-GET request successfully. All Core Deliverables met.
+2 pts: Partially able to communicate with the server, but incompletely or with some errors.
+1 pt: Unable to communicate with the server.
+Total Points: 15
+
+Contributing
+Contributions are welcome! If you have suggestions or find any issues, please open an issue or submit a pull request.
+
+License
+This project is licensed under the MIT License.
